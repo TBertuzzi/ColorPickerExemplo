@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:cp="clr-namespace:Amporis.Xamarin.Forms.ColorPicker;assembly=Amporis.Xamarin.Forms.ColorPicker"
+             Padding="15,80,15,0"
+             mc:Ignorable="d"
+             x:Class="ColorPickerExemplo.MainPage">
+        <StackLayout x:Name="principal">
+            <Label Text="ColorPickerEntry"/>
+            <cp:ColorPickerEntry  Color="{Binding EditedColor}" />
+            <Label Text=" --- "/>
+            <Label Text="ColorPickerMixer" />
+            <cp:ColorPickerMixer Color="{Binding EditedColor}" />
+            <Label Text=" --- "/>
+            <Label Text="Chamar Popup" />
+            <Button Text="Abrir Popup de cores" Clicked="popup_Clicked"></Button>
+        </StackLayout>
+</ContentPage>
